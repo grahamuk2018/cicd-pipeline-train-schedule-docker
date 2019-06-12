@@ -13,5 +13,6 @@ pipeline {
                 sh 'sudo docker build -t grahamseanking/train-schedule .'
                 sh'sudo docker run -p 8080:8081 -d grahamseanking/train-schedule'
             }
+        }
     }
 }
