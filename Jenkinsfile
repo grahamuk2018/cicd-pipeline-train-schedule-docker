@@ -11,7 +11,7 @@ pipeline {
         stage('deploy') {
             steps {
                 sh 'docker build -t grahamseanking/train-schedule .'
-                sh 'docker run -p 8080:8081 -d grahamseanking/train-schedule'
+                sh 'docker run -p 8081:8080 -d grahamseanking/train-schedule'
             }
         }
     }
